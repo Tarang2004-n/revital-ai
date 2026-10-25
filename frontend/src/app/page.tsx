@@ -161,9 +161,9 @@ export default function ReVitalDashboard() {
       {/* Main Clinical Command Workspace */}
       <main className="flex-1 p-5 space-y-5 max-w-[1920px] w-full mx-auto">
         {/* Upper Workspace: Left (3D Digital Twin) + Center (Recovery Fork Explorer) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
           {/* Left Pane — Screen B: 3D Physiological Digital Twin */}
-          <div className="lg:col-span-4 h-[590px]">
+          <div className="lg:col-span-4 h-[720px]">
             <PhysiologicalTwin3D
               organAttribution={patient?.organ_attribution || null}
               uncertaintyScore={patient?.uncertainty_score || 0}
@@ -172,7 +172,7 @@ export default function ReVitalDashboard() {
           </div>
 
           {/* Center Pane — Screen C: Interactive Recovery Fork Explorer */}
-          <div className="lg:col-span-8 flex flex-col h-[590px]">
+          <div className="lg:col-span-8 flex flex-col min-h-[720px]">
             <RecoveryForkExplorer
               patient={patient}
               simulation={simulation}

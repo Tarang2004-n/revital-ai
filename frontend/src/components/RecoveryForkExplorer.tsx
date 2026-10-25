@@ -465,7 +465,7 @@ export function RecoveryForkExplorer({
       </div>
 
       {/* Scenario Comparison Cards */}
-      <div className="p-4 grid grid-cols-1 md:grid-cols-3 gap-3 overflow-y-auto">
+      <div className="p-4 grid grid-cols-1 md:grid-cols-3 gap-3">
         {simulation ? (
           simulation.scenarios.map((s) => {
             const isSupported = s.evidence_label.startsWith("EMPIRICALLY");
