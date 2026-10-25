@@ -1,0 +1,33 @@
+name: Bug Report
+description: Report a reproducible issue or numerical inconsistency in RE:VITAL AI
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping maintain the clinical and mathematical fidelity of RE:VITAL AI!
+  - type: input
+    id: environment
+    attributes:
+      label: System Environment
+      description: OS version, Python version, Node.js version
+      placeholder: macOS 14.5 / Python 3.11 / Node.js 20
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: Step-by-step commands or API payloads to reproduce the issue
+      placeholder: |
+        1. Query GET /api/patient/3
+        2. Post simulation to /api/simulate/3 with intervention_time=64
+        3. Observe discrepancy in positivity score
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs Actual Behavior
+      description: What numerical result or UI state was expected versus what occurred?
+    validations:
+      required: true

@@ -1,0 +1,21 @@
+name: Feature / Clinical Protocol Request
+description: Propose an extension to the causal model, organ systems, or clinical workflow
+labels: ["enhancement", "clinical-ml"]
+body:
+  - type: markdown
+    attributes:
+      value: Propose new potential-outcome treatment scenarios, organ attributions, or conformal calibration metrics.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Clinical or Mathematical Motivation
+      description: What clinical bottleneck or predictive limitation does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution / Mathematical Formulation
+      description: Describe the algorithm, estimator, or UI component.
+    validations:
+      required: true

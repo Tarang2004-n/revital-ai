@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you utilize RE:VITAL AI in your research or clinical engineering benchmarks, please cite it as below."
+authors:
+  - family-names: "RE:VITAL AI Contributors"
+    given-names: "Clinical ML & Systems Architecture Team"
+title: "RE:VITAL AI: Counterfactual Recovery Intelligence & Adaptive Care Platform"
+version: 1.0.0
+date-released: 2026-10-25
+url: "https://github.com/Tarang2004-n/revital-ai"
+keywords:
+  - "continuous-time-models"
+  - "neural-ode"
+  - "adaptive-conformal-inference"
+  - "counterfactual-inference"
+  - "step-down-care"
+  - "sepsis-decompensation"
+  - "physiological-digital-twin"
